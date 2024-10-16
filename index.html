@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <nav>
+        <h1>Lista de Compras</h1>
+    </nav>
+
+    <main>
+        <div class="wrapper container">
+
+            <section id="formulario">
+
+                <h2>Cadastro de Itens</h2>
+                <hr>
+
+                <form>
+                    <div>
+                        <label for="nome">Nome</label>
+                        <input id="nome" name="nome" type="text" value="">
+                    </div>
+
+                    <div>
+                        <label for="preco">Preço</label>
+                        <input id="preco" name="preco" type="text" placeholder="R$ 0,00" value="">
+                    </div>
+
+                    <div>
+                        <label for="quantidade">Quantidade</label>
+                        <input id="quantidade" name="quantidade" type="number" min="0" value="0">
+                    </div>
+
+                    <div>
+                        <label for="prioridade">Prioridade</label>
+                        <select id="prioridade" name="prioridade">
+                            <option value="baixa">Baixa</option>
+                            <option value="media">Média</option>
+                            <option value="alta">Alta</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <button id="adicionar-btn" type="button">Salvar</button>
+                    </div>
+                </form>
+
+            </section>
+
+            <section id="lista">
+
+                <header>
+                    <h2>Lista de Compras</h2>
+                    <hr>
+                    <p><strong>Total:</strong> R$ 0,00</p>
+                </header>
+
+                <ul id="lista-compras">
+
+                </ul>
+            </section>
+
+        </div>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>
