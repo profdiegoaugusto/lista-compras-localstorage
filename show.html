@@ -17,12 +17,19 @@
     <main>
         <div class="wrapper container">
 
-            <section id="formulario">
+            <section id="detalhesItem">
 
-                <h2>Cadastro de Itens</h2>
-                <hr>
-
+                <header>
+                    <h2>Detalhes</h2>
+                    <hr>
+                </header>
                 <form>
+
+                    <div>
+                        <label for="id-item">ID</label>
+                        <input id="id-item" name="id-item" type="text" value="" readonly>
+                    </div>
+
                     <div>
                         <label for="nome">Nome</label>
                         <input id="nome" name="nome" type="text" value="">
@@ -48,27 +55,13 @@
                     </div>
 
                     <div>
-                        <button id="salvar-btn" type="button">Salvar</button>
+                        <button id="atualizar-btn" type="button">Atualizar</button>
                     </div>
                 </form>
-
-            </section>
-
-            <section id="lista">
-
-                <header>
-                    <h2>Lista de Compras</h2>
-                    <hr>
-                    <p><strong>Total:</strong> <span id="total">R$ 0,00</span></p>
-                </header>
-
-                <ul id="lista-compras">
-
-                </ul>
             </section>
 
         </div>
     </main>
-    <script src="js/main.js"></script>
+    <script src="js/show.js"></script>
 </body>
 </html>
