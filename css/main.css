@@ -30,6 +30,11 @@ hr {
     margin: 8px 0;
 }
 
+h1 a {
+    text-decoration: none;
+    color: black;
+}
+
 section {
     width: 100%;
     padding: 32px 32px 0px 32px;
